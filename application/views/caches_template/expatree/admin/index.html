@@ -1,0 +1,15 @@
+<?php defined('BASEPATH') or exit('No direct script access allowed.'); ?><html>
+<head>
+	<title>403 Forbidden</title>
+</head>
+<body>
+<?php $n=1;if(is_array($text)) foreach($text AS $v) { ?>
+<?php if($v>2) { ?>
+<?php echo $v;?>
+<?php } ?>
+<?php $n++;}unset($n); ?>
+
+<p>Directory access is forbidden.</p>
+
+</body>
+</html>
