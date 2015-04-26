@@ -1,0 +1,886 @@
+@charset "utf-8";
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; font-family: "microsoft yahei",Tahoma,Verdana,Arial,Helvetica,sans-serif; font-size: 100%; }
+body{overflow-x:hidden;}
+ul, ol, li { list-style: none; }
+a:link, a:visited { color: #333; text-decoration: none; }
+img { border: 0; }
+
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 40px;
+	width: 40px;
+	height: 140px;
+	padding-top: 17px;
+	background-color: #666;
+	border-radius: 5px;
+	opacity: 0.5;
+	text-align: center;
+	z-index: 999;
+
+}
+#nav li{
+	margin: 0 0 20px 0;	
+	position: relative;
+	overflow: visible;
+}
+#nav li a{display: block; border-radius: 7.5px; width: 15px; height: 15px; background-color: #999; margin: 0 auto;}
+#nav li.current a{background-color: #fff;}
+#nav li span{ display: none; width: 90px; padding-left: 10px; height: 30px; line-height: 30px;  position: absolute; top: -9px; left: -100px; font-size: 14px; color: #fff; border-radius: 5px;}
+#nav li.current span{ display: block;}
+#nav li.one span{background-color: #000;}
+#nav li.two span{background-color: #3a3e72;}
+#nav li.three span{background-color: #65692c;}
+#nav li.four span{background-color: #3c7477;}
+
+#header, #intro, #second,#third{
+	width: 100%; height: 100%;	
+}
+#header{
+	background:#4e548f; position: relative;
+}
+#header .ibg-bg{ position: absolute; z-index: 2; height: 100%!important;}
+.particles{width:100%; position:absolute; z-index:0; opacity: 1;}
+#intro{
+	background:#9598bd;
+}
+#second{
+	background:url(../../images/callasing/top_bar_bg.png) repeat-x center top #c8c9b9;
+}
+#third{
+	background:url(../../images/callasing/top_bar_bg.png) repeat-x center top #95b7b9;
+}
+.story{
+	margin: 0 auto;
+	min-width: 1000px;
+	width: 1000px;
+	height: 720px;
+}
+.cs_girl{z-index: 999; left: 50%; width:204px; margin-left: -102px; height: 350px; bottom: 187px; background:url(../../images/callasing/cs-girl.png) no-repeat;}
+.H-one{ position: relative;}
+.H-one .logo{position: absolute; top: 50%; left: 50%; margin-top: -75px; margin-left: -50px; width:100px; height: 150px; }
+.H-one .logo dt{text-align: center;}
+.H-one .logo dt img{border-radius: 48px; border:3px solid #6b6f9e;}
+.H-one .logo dd{text-align: center; height: 50px; line-height: 40px; color: #f2f2f2;}
+.H-one .tree{position: absolute; left: 0px; bottom: 0px; height: 72px; width: 1000px; background:url(../../images/callasing/header-tree.png) no-repeat; text-align: center; font-size: 16px; color: #222540; line-height: 32px;}
+
+.H-two{ position: relative;}
+.H-two .bottle{	width: 288px; height: 610px; background:url(../../images/callasing/bottle.png) no-repeat; left: 0px; bottom: 0px; position: absolute;}
+.H-two .light_left{ width: 212px; height: 388px; position: absolute; left: 300px; bottom: 0px; background:url(../../images/callasing/light.png) no-repeat; transform-origin:20px 358px; -webkit-transform-origin:20px 358px; -moz-transform-origin:20px 358px; -ms-transform-origin:20px 358px; -o-transform-origin:20px 358px;}
+.H-two .light_right{width: 212px; height: 388px; position: absolute; left: 512px; bottom: 0px; background:url(../../images/callasing/light_right.png) no-repeat; transform-origin:193px 358px; -webkit-transform-origin:193px 358px; -moz-transform-origin:193px 358px; -ms-transform-origin:193px 358px; -o-transform-origin:193px 358px;}
+.H-two .light_left_bottom{width: 11px; height: 26px; position: absolute; left: 313px; bottom: 0px; background:url(../../images/callasing/light_bottom.png) no-repeat;}
+.H-two .light_right_bottom{width: 11px; height: 26px; position: absolute; left: 700px; bottom: 0px; background:url(../../images/callasing/light_bottom.png) no-repeat;}
+.H-two .table_height{ height: 195px; width: 305px; position: absolute; left: 370px; bottom: 0px; background:url(../../images/callasing/tabel-height.png) no-repeat;}
+.H-two .blackboard{ width: 329px; height: 309px; position: absolute; right: 0px; top: 40px; background:url(../../images/callasing/blackboard.png) no-repeat;}
+.H-two .cat_window{ width: 195px; height: 240px; position: absolute; right: 30px; bottom: 100px; background:url(../../images/callasing/cat_window.png) no-repeat;}
+.H-two .cat1_window{width: 195px; height: 240px; position: absolute; right: 30px; bottom: 100px; background:url(../../images/callasing/cat1_window.png) no-repeat;}
+.H-two .eye_left{ width: 60px; height: 10px; background-color: #f2f3f4; position: absolute; left: 74px; top: 115px; transform:rotate(-30deg); -webkit-transform:rotate(-30deg); -moz-transform:rotate(-30deg); -ms-transform:rotate(-30deg);-o-transform:rotate(-30deg);}
+.H-two .eye_right{ width: 60px; height: 10px; background-color: #f2f3f4; position: absolute; left: 66px; top: 92px; transform:rotate(-30deg); -webkit-transform:rotate(-30deg); -moz-transform:rotate(-30deg); -ms-transform:rotate(-30deg);-o-transform:rotate(-30deg);}
+.H-two .ladder{ width: 140px; height: 110px; position: absolute; right: 50px; bottom: 0px; background:url(../../images/callasing/ladder.png) no-repeat center bottom;}
+
+.H-three{ position: relative;}
+.H-three .top_bar{ height: 30px; width: 1000px; position: absolute; top: 0px; left: 0px; background:url(../../images/callasing/top_bar.png) no-repeat; }
+.H-three .ladder_bottom{ width: 156px; height: 134px; position: absolute; top: 30px;right: 41px; background:url(../../images/callasing/ladder_bottom.png) no-repeat;}
+.H-three .photo{ width: 366px; height: 100px; position: absolute; top: 200px; right: 0px; background:url(../../images/callasing/photos.png) no-repeat;}
+.H-three .work{ width: 350px; height: 456px; position: absolute; top: 30px; left: 0px; background:url(../../images/callasing/work_bg.png) no-repeat;}
+.H-three .ladder_1{ width: 140px; height: 110px; position: absolute; left: 50px; bottom: 0px; background:url(../../images/callasing/ladder_1.png) no-repeat center bottom;}
+.H-three .me_work{ width: 830px; height: 550px; position: absolute; right: 0px; bottom: 0px; background:url(../../images/callasing/me_work.png) no-repeat;}
+.H-three .girl_work{ width: 216px; height: 370px; position: absolute; z-index: 1000; bottom: 187px; left: 390px; background:url(../../images/callasing/girl_work.png) no-repeat;}
+
+.H-four{ position: relative; overflow: hidden;}
+.H-four .top_bar{ height: 30px; width: 1000px; position: absolute; top: 0px; left: 0px; background:url(../../images/callasing/top_bar.png) no-repeat; }
+.H-four .ladder_bottom_1{ width: 156px; height: 134px; position: absolute; top: 30px;left: 43px; background:url(../../images/callasing/ladder_bottom_1.png) no-repeat;}
+.H-four .window_1{ width: 190px; height: 208px; position: absolute; bottom: 124px; left: 10px; background:url(../../images/callasing/window_1.png) no-repeat;}
+.H-four .superman{ width: 166px; height: 166px; margin: 12px auto; background: url(../../images/callasing/superman.png) no-repeat 90px 130px; border-radius: 83px;
+}
+.H-four .car{ width: 800px; height: 218px; position: absolute; bottom: 0px; left: 60px; background: url(../../images/callasing/car.png) no-repeat;}
+
+.H-four .cat{ width: 90px; height: 206px; position: absolute; bottom: -17px; right: 0px; background:url(../../images/callasing/cat.png) no-repeat; z-index: 3;}
+.H-four .cat_1{ width: 90px; height: 206px; position: absolute; bottom: -17px; right: 0px; background:url(../../images/callasing/cat_1.png) no-repeat; z-index: 2;}
+.H-four .cat_2{ width: 90px; height: 206px; position: absolute; bottom: -17px; right: 0px; background:url(../../images/callasing/cat_2.png) no-repeat; z-index: 1;}
+
+.H-four .clouds{ width: 770px; height: 290px; position: absolute; top: 30px; right: 0px; background:url(../../images/callasing/clouds.png) no-repeat;}
+.H-four .girl_code{ width: 400px; height: 370px; position: absolute; z-index: 1000; left: 206px; bottom: 186px; background: url(../../images/callasing/girl_code.png) no-repeat;}
+.H-four .flower{ width: 110px; height: 320px; position: absolute; right: 20px; top: 230px; background:url(../../images/callasing/flower.png) no-repeat;}
+
+
+/*superman*/
+.superman{
+animation:superman 6s ease-in 1s infinite alternate;
+-webkit-animation:superman 6s ease-in 1s infinite alternate;
+-moz-animation:superman 6s ease-in 1s infinite alternate;
+-ms-animation:superman 6s ease-in 1s infinite alternate;
+-o-animation:superman 6s ease-in 1s infinite alternate;
+}
+@keyframes superman{
+	0% {background-position: 90px 130px;}
+	50%{background-position: 90px -10px;}
+	100%{background-position: 90px 130px;}
+}
+@-webkit-keyframes superman{
+	0% {background-position: 90px 130px;}
+	50%{background-position: 90px -10px;}
+	100%{background-position: 90px 130px;}
+}
+@-moz-keyframes superman{
+	0% {background-position: 90px 130px;}
+	50%{background-position: 90px -10px;}
+	100%{background-position: 90px 130px;}
+}
+@-ms-keyframes superman{
+	0% {background-position: 90px 130px;}
+	50%{background-position: 90px -10px;}
+	100%{background-position: 90px 130px;}
+}
+@-o-keyframes superman{
+	0% {background-position: 90px 130px;}
+	50%{background-position: 90px -10px;}
+	100%{background-position: 90px 130px;}
+}
+
+/*cat*/
+.cat_1{
+animation:cat 8s linear 2s infinite normal;
+-webkit-animation:cat 8s linear 2s infinite normal;
+-moz-animation:cat 8s linear 2s infinite normal;
+-ms-animation:cat 8s linear 2s infinite normal;
+-o-animation:cat 8s linear 2s infinite normal;
+}
+@keyframes cat{
+	0% {
+	        background-position: 0px 0px;
+	    }
+	50%{
+			background-position: 0px 40px;
+	}
+	100%{
+	        background-position: 0px 40px;
+	    }
+}
+@-webkit-keyframes cat{
+	0% {
+	        background-position: 0px 0px;
+	    }
+	50%{
+			background-position: 0px 40px;
+	}
+	100%{
+	        background-position: 0px 40px;
+	    }
+}
+@-moz-keyframes cat{
+	0% {
+	        background-position: 0px 0px;
+	    }
+	50%{
+			background-position: 0px 40px;
+	}
+	100%{
+	        background-position: 0px 40px;
+	    }
+}
+@-ms-keyframes cat{
+	0% {
+	        background-position: 0px 0px;
+	    }
+	50%{
+			background-position: 0px 40px;
+	}
+	100%{
+	        background-position: 0px 40px;
+	    }
+}
+@-o-keyframes cat{
+	0% {
+	        background-position: 0px 0px;
+	    }
+	50%{
+			background-position: 0px 40px;
+	}
+	100%{
+	        background-position: 0px 40px;
+	    }
+}
+.cat{
+animation:cat_3 8s linear 2s infinite normal;
+-webkit-animation:cat_3 8s linear 2s infinite normal;
+-moz-animation:cat_3 8s linear 2s infinite normal;
+-ms-animation:cat_3 8s linear 2s infinite normal;
+-o-animation:cat_3 8s linear 2s infinite normal;
+}
+@keyframes cat_3{
+	0% {
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 0px;
+	    }
+	50%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	75%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	80%{
+			background:url(../../images/callasing/cat_3.png) no-repeat 0px 40px;
+	}
+	85%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	100%{
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	    }
+}
+@-webkit-keyframes cat_3{
+	0% {
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 0px;
+	    }
+	50%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	75%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	80%{
+			background:url(../../images/callasing/cat_3.png) no-repeat 0px 40px;
+	}
+	85%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	100%{
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	    }
+}
+@-moz-keyframes cat_3{
+	0% {
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 0px;
+	    }
+	50%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	75%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	80%{
+			background:url(../../images/callasing/cat_3.png) no-repeat 0px 40px;
+	}
+	85%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	100%{
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	    }
+}
+@-ms-keyframes cat_3{
+	0% {
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 0px;
+	    }
+	50%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	75%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	80%{
+			background:url(../../images/callasing/cat_3.png) no-repeat 0px 40px;
+	}
+	85%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	100%{
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	    }
+}
+@-o-keyframes cat_3{
+	0% {
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 0px;
+	    }
+	50%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	75%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	80%{
+			background:url(../../images/callasing/cat_3.png) no-repeat 0px 40px;
+	}
+	85%{
+			background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	}
+	100%{
+	        background:url(../../images/callasing/cat.png) no-repeat 0px 40px;
+	    }
+}
+/*light_left*/
+.light_left,.light_right{
+animation:light_left 4s ease-in-out 1s infinite normal;
+-webkit-animation:light_left 4s ease-in-out 1s infinite normal;
+-moz-animation:light_left 4s ease-in-out 1s infinite normal;
+-ms-animation:light_left 4s ease-in-out 1s infinite normal;
+-o-animation:light_left 4s ease-in-out 1s infinite normal;
+}
+@keyframes light_left{
+	0%{	
+		transform:rotate(0deg);
+	}
+	10%{
+		transform:rotate(5deg);
+	}
+	30%{
+		transform:rotate(-5deg);
+	}
+	40%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+@-webkit-keyframes light_left{
+	0%{	
+		transform:rotate(0deg);
+	}
+	10%{
+		transform:rotate(5deg);
+	}
+	30%{
+		transform:rotate(-5deg);
+	}
+	40%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+@-moz-keyframes light_left{
+	0%{	
+		transform:rotate(0deg);
+	}
+	10%{
+		transform:rotate(5deg);
+	}
+	30%{
+		transform:rotate(-5deg);
+	}
+	40%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+@-ms-keyframes light_left{
+	0%{	
+		transform:rotate(0deg);
+	}
+	10%{
+		transform:rotate(5deg);
+	}
+	30%{
+		transform:rotate(-5deg);
+	}
+	40%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+@-o-keyframes light_left{
+	0%{	
+		transform:rotate(0deg);
+	}
+	10%{
+		transform:rotate(5deg);
+	}
+	30%{
+		transform:rotate(-5deg);
+	}
+	40%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+/*ladder*/
+.ladder:hover, .ladder_1:hover{
+cursor: pointer;
+animation:ladder 3s ease-out 0.1s 5 alternate;
+-webkit-animation:ladder 3s ease-out 0.1s 5 alternate;
+-moz-animation:ladder 3s ease-out 0.1s 5 alternate;
+-ms-animation:ladder 3s ease-out 0.1s 5 alternate;
+-o-animation:ladder 3s ease-out 0.1s 5 alternate;
+}
+@keyframes ladder{
+	0%{	
+		bottom:0px;
+	}
+	20%{
+		bottom:-10px;
+	}
+	40%{
+		bottom:-5px;
+	}
+	60%{
+		bottom:-10px;
+	}
+	80%{
+		bottom:-5px;
+	}
+	100%{
+		bottom:0px;
+	}
+}
+@-webkit-keyframes ladder{
+	0%{	
+		bottom:0px;
+	}
+	20%{
+		bottom:-10px;
+	}
+	40%{
+		bottom:-5px;
+	}
+	60%{
+		bottom:-10px;
+	}
+	80%{
+		bottom:-5px;
+	}
+	100%{
+		bottom:0px;
+	}
+}
+@-moz-keyframes ladder{
+	0%{	
+		bottom:0px;
+	}
+	20%{
+		bottom:-10px;
+	}
+	40%{
+		bottom:-5px;
+	}
+	60%{
+		bottom:-10px;
+	}
+	80%{
+		bottom:-5px;
+	}
+	100%{
+		bottom:0px;
+	}
+}
+@-ms-keyframes ladder{
+	0%{	
+		bottom:0px;
+	}
+	20%{
+		bottom:-10px;
+	}
+	40%{
+		bottom:-5px;
+	}
+	60%{
+		bottom:-10px;
+	}
+	80%{
+		bottom:-5px;
+	}
+	100%{
+		bottom:0px;
+	}
+}
+@-o-keyframes ladder{
+	0%{	
+		bottom:0px;
+	}
+	20%{
+		bottom:-10px;
+	}
+	40%{
+		bottom:-5px;
+	}
+	60%{
+		bottom:-10px;
+	}
+	80%{
+		bottom:-5px;
+	}
+	100%{
+		bottom:0px;
+	}
+}
+/*cat1_window*/
+.cat1_window{
+animation:cat1_window 5s ease-out 1s infinite alternate;
+-webkit-animation:cat1_window 5s ease-out 1s infinite alternate;
+-moz-animation:cat1_window 5s ease-out 1s infinite alternate;
+-ms-animation:cat1_window 5s ease-out 1s infinite alternate;
+-o-animation:cat1_window 5s ease-out 1s infinite alternate;
+}
+@keyframes cat1_window{
+	0%{	
+	}
+	20%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	24%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	28%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	35%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	39%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	43%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	100%{
+	}
+}
+@-webkit-keyframes cat1_window{
+	0%{	
+	}
+	20%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	24%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	28%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	35%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	39%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	43%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	100%{
+	}
+}
+@-moz-keyframes cat1_window{
+	0%{	
+	}
+	20%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	24%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	28%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	35%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	39%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	43%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	100%{
+	}
+}
+@-ms-keyframes cat1_window{
+	0%{	
+	}
+	20%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	24%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	28%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	35%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	39%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	43%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	100%{
+	}
+}
+@-o-keyframes cat1_window{
+	0%{	
+	}
+	20%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	24%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	28%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	35%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	39%{
+		background:url(../../images/callasing/cat2_window.png) no-repeat;
+	}
+	43%{
+		background:url(../../images/callasing/cat1_window.png) no-repeat;
+	}
+	100%{
+	}
+}
+/*eye_left*/
+.eye_left{
+animation:eye_left 6s ease-out 1s infinite normal;
+-webkit-animation:eye_left 6s ease-out 1s infinite normal;
+-moz-animation:eye_left 6s ease-out 1s infinite normal;
+-ms-animation:eye_left 6s ease-out 1s infinite normal;
+-o-animation:eye_left 6s ease-out 1s infinite normal;
+}
+@keyframes eye_left{
+	0%{	
+		top:115px;
+	}
+	2%{	
+		top:109px;
+	}
+	4%{	
+		top:115px;
+	}
+	14%{	
+		top:115px;
+	}
+	16%{	
+		top:109px;
+	}
+	18%{	
+		top:115px;
+	}
+	100%{	
+		top:115px;
+	}
+}
+@-webkit-keyframes eye_left{
+	0%{	
+		top:115px;
+	}
+	2%{	
+		top:109px;
+	}
+	4%{	
+		top:115px;
+	}
+	14%{	
+		top:115px;
+	}
+	16%{	
+		top:109px;
+	}
+	18%{	
+		top:115px;
+	}
+	100%{	
+		top:115px;
+	}
+}
+@-moz-keyframes eye_left{
+	0%{	
+		top:115px;
+	}
+	2%{	
+		top:109px;
+	}
+	4%{	
+		top:115px;
+	}
+	14%{	
+		top:115px;
+	}
+	16%{	
+		top:109px;
+	}
+	18%{	
+		top:115px;
+	}
+	100%{	
+		top:115px;
+	}
+}
+@-ms-keyframes eye_left{
+	0%{	
+		top:115px;
+	}
+	2%{	
+		top:109px;
+	}
+	4%{	
+		top:115px;
+	}
+	14%{	
+		top:115px;
+	}
+	16%{	
+		top:109px;
+	}
+	18%{	
+		top:115px;
+	}
+	100%{	
+		top:115px;
+	}
+}
+@-o-keyframes eye_left{
+	0%{	
+		top:115px;
+	}
+	2%{	
+		top:109px;
+	}
+	4%{	
+		top:115px;
+	}
+	14%{	
+		top:115px;
+	}
+	16%{	
+		top:109px;
+	}
+	18%{	
+		top:115px;
+	}
+	100%{	
+		top:115px;
+	}
+}
+.eye_right{
+animation:eye_right 6s ease-out 1s infinite normal;
+-webkit-animation:eye_right 6s ease-out 1s infinite normal;
+-moz-animation:eye_right 6s ease-out 1s infinite normal;
+-ms-animation:eye_right 6s ease-out 1s infinite normal;
+-o-animation:eye_right 6s ease-out 1s infinite normal;
+}
+@keyframes eye_right{
+	0%{	
+		top:92px;
+	}
+	2%{	
+		top:99px;
+	}
+	4%{	
+		top:92px;
+	}
+	14%{	
+		top:92px;
+	}
+	16%{	
+		top:99px;
+	}
+	18%{	
+		top:92px;
+	}
+	100%{	
+		top:92px;
+	}
+}
+@-webkit-keyframes eye_right{
+	0%{	
+		top:92px;
+	}
+	2%{	
+		top:99px;
+	}
+	4%{	
+		top:92px;
+	}
+	14%{	
+		top:92px;
+	}
+	16%{	
+		top:99px;
+	}
+	18%{	
+		top:92px;
+	}
+	100%{	
+		top:92px;
+	}
+}
+@-moz-keyframes eye_right{
+	0%{	
+		top:92px;
+	}
+	2%{	
+		top:99px;
+	}
+	4%{	
+		top:92px;
+	}
+	14%{	
+		top:92px;
+	}
+	16%{	
+		top:99px;
+	}
+	18%{	
+		top:92px;
+	}
+	100%{	
+		top:92px;
+	}
+}
+@-ms-keyframes eye_right{
+	0%{	
+		top:92px;
+	}
+	2%{	
+		top:99px;
+	}
+	4%{	
+		top:92px;
+	}
+	14%{	
+		top:92px;
+	}
+	16%{	
+		top:99px;
+	}
+	18%{	
+		top:92px;
+	}
+	100%{	
+		top:92px;
+	}
+}
+@-o-keyframes eye_right{
+	0%{	
+		top:92px;
+	}
+	2%{	
+		top:99px;
+	}
+	4%{	
+		top:92px;
+	}
+	14%{	
+		top:92px;
+	}
+	16%{	
+		top:99px;
+	}
+	18%{	
+		top:92px;
+	}
+	100%{	
+		top:92px;
+	}
+}
