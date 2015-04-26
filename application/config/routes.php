@@ -37,9 +37,16 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+//var_dump($_SERVER['HTTP_HOST']);
+$host = explode(".",$_SERVER['HTTP_HOST']);
+if($host[0]=='callasing'){
+    $route['default_controller'] = "callasing/indexpage";
+}else{
+    $route['default_controller'] = "admin/login";
+}
 
-$route['default_controller'] = "home/welcome";
 $route['404_override'] = '';
+
 
 
 /* End of file routes.php */
