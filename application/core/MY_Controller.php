@@ -27,7 +27,8 @@ class MY_Controller extends CI_Controller{
      * 获得当前模块
      * */
     protected function getModules(){
-        return $this->uri->segment(1);
+        $dir = $this->router->directory;
+        return substr($dir,0,-1);
     }
 
 }
