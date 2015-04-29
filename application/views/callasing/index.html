@@ -1,25 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="keywords" content="作品展示" />
-<meta name="description" content="作品展示" />
-<title>cs 作品</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="作品展示" />
+    <meta name="description" content="作品展示" />
+    <title>cs 作品</title>
 
-<link href="../ui/css/callasing/lrtk.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../ui/js/callasing/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="../ui/js/callasing/jquery.interactive_bg.js"></script>
-<script type="text/javascript" src="../ui/js/callasing/nbw-parallax.js"></script>
-<script type="text/javascript" src="../ui/js/callasing/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="../ui/js/callasing/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript" src="../ui/js/callasing/jquery.inview.js"></script>
-<link rel="stylesheet" href="../ui/css/callasing/photoswipe.css">
-<link rel="stylesheet" href="../ui/css/callasing/default-skin.css">
-<script src="../ui/js/callasing/photoswipe.min.js"></script>
-<script src="../ui/js/callasing/photoswipe-ui-default.js"></script>
-<script type="text/javascript" src="../ui/js/callasing/jquery.particleground.js"></script>
-<script type="text/javascript" src="../ui/js/callasing/demo.js"></script>
+    <link href="../ui/css/callasing/lrtk.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../ui/js/callasing/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../ui/js/callasing/jquery.interactive_bg.js"></script>
+    <script type="text/javascript" src="../ui/js/callasing/nbw-parallax.js"></script>
+    <script type="text/javascript" src="../ui/js/callasing/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="../ui/js/callasing/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="../ui/js/callasing/jquery.inview.js"></script>
+    <link rel="stylesheet" href="../ui/css/callasing/photoswipe.css">
+    <link rel="stylesheet" href="../ui/css/callasing/default-skin.css">
+    <link rel="stylesheet" href="../ui/css/callasing/layout.css">
 
+    <script src="../ui/js/callasing/photoswipe.min.js"></script>
+    <script src="../ui/js/callasing/photoswipe-ui-default.js"></script>
+    <script type="text/javascript" src="../ui/js/callasing/jquery.particleground.js"></script>
+    <script type="text/javascript" src="../ui/js/callasing/demo.js"></script>
+
+    <script src="../ui/js/callasing/jquery.cookie.js"></script>
+    <script src="../ui/js/callasing/autoPalyer.js"></script>
+    <script src="../ui/js/callasing/articlePictureJsonJS.js" ></script>
 </head>
 
 <body>
@@ -75,35 +80,60 @@
         <!-- product start --> 
     <div class="my-simple-gallery">
     <figure>
-      <a href="../ui/images/callasing/work/2.jpg" data-size="964x1024">
-          <img src="../ui/images/callasing/work/1.jpg" alt="Image description" />
+      <a href="javascript:showpic(1);" data-size="964x1024">
+          <img src="../ui/images/callasing/zhanshitubiao/weixue_app.png" alt="Image description" />
       </a>
-      <figcaption>Image caption  1</figcaption>
     </figure>
     <figure>
-      <a href="../ui/images/callasing/work/f2.jpg" data-size="1024x540">
-          <img src="../ui/images/callasing/work/f1.jpg"  alt="Image description" />
+      <a href="javascript:showpic(2);" data-size="1024x540">
+          <img src="../ui/images/callasing/zhanshitubiao/gtt_app.png"  alt="Image description" />
       </a>
-      <figcaption>Image caption  2</figcaption>
+
+      <figcaption>Image caption  2.1</figcaption>
+
     </figure>
     <figure>
-      <a href="../ui/images/callasing/work/b2.jpg"data-size="1200x800">
-          <img src="../ui/images/callasing/work/b1.jpg" alt="Image description" />
+      <a href="javascript:showpic(3);"data-size="1200x800">
+          <img src="../ui/images/callasing/zhanshitubiao/gtt_web.png" alt="Image description" />
       </a>
       <figcaption>Image caption  3</figcaption>
     </figure>
     <figure>
-      <a href="../ui/images/callasing/work/c2.jpg" data-size="900x598">
-          <img src="../ui/images/callasing/work/c1.jpg" alt="Image description" />
+      <a href="javascript:showpic(4);" data-size="900x598">
+          <img src="../ui/images/callasing/zhanshitubiao/guimi_web.png" alt="Image description" />
       </a>
       <figcaption>Image caption  4</figcaption>
     </figure>
     <figure>
-      <a href="../ui/images/callasing/work/d2.jpg" data-size="1400x1980">
-          <img src="../ui/images/callasing/work/d1.jpg"  alt="Image description" />
+      <a href="javascript:showpic(5);" data-size="1400x1980">
+          <img src="../ui/images/callasing/zhanshitubiao/weixue_web.png"  alt="Image description" />
       </a>
       <figcaption>Image caption  5</figcaption>
     </figure>
+        <figure>
+            <a href="javascript:showpic(6);" data-size="1400x1980">
+                <img src="../ui/images/callasing/zhanshitubiao/jiuman.png"  alt="Image description" />
+            </a>
+            <figcaption>Image caption  5</figcaption>
+        </figure>
+        <figure>
+            <a href="javascript:showpic(7);" data-size="1400x1980">
+                <img src="../ui/images/callasing/zhanshitubiao/miui.png"  alt="Image description" />
+            </a>
+            <figcaption>Image caption  5</figcaption>
+        </figure>
+        <figure>
+            <a href="javascript:showpic(8);" data-size="1400x1980">
+                <img src="../ui/images/callasing/zhanshitubiao/24dian.png"  alt="Image description" />
+            </a>
+            <figcaption>Image caption  5</figcaption>
+        </figure>
+        <figure>
+            <a href="javascript:showpic(9);" data-size="1400x1980">
+                <img src="../ui/images/callasing/zhanshitubiao/ipad.png"  alt="Image description" />
+            </a>
+            <figcaption>Image caption  5</figcaption>
+        </figure>
     </div>
     <!-- 弹出 -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -179,6 +209,29 @@
     </div> <!--.story-->
 </div> <!--#third-->
 
+<div id="wrapper" style="position: absolute;top: 200%;left: 50%;margin-left: -480px;z-index: 9999;">
+    <div id="gallery" style="padding-top: 10px;padding-bottom: 20px">
+        <div id="_playpic" class="playNav">
+            <h2 class="title" id="alt"></h2>
+            <div class="jump" style="display: none"> (<span id="showPage">0</span>/<span id="showTotal">0</span>) </div>
+            <div class="playButtom"> <a href="javascript://" target="_self" class="play" title="播放" id=""></a> <a href="javascript://" target="_self" style="display:none" class="pause" title="暂停" id=""></a> </div>
+        </div>
+        <div id="big_box">
+            <div class="bigPic"> <img id="screen" src="ui/images/callasing/big_photo.jpg" /> </div>
+        </div>
+        <div class="clear"></div>
+        <div class="silderpic" >
+            <div class="left_tuji" style="display: none"> <a id="butPrevGroup" href="javascript://" target="_self" title="上五张图片"><img src="ui/images/callasing/ps1.jpg" width="94" height="64" /></a> <span><a id="butPrevGroup" href="javascript://" target="_self" title="上五张图片">&lt;&lt;上一图集</a></span> </div>
+            <div class="gallery_bg" > <i class="prePic"> <a id="butPrev" href="javascript://" target="_self" title="上五张图片"></a> </i>
+                <ul id="nav3" >
+                </ul>
+                <i class="nextPic"> <a id="butNext" href="javascript://" target="_self" title="下五张图片"></a> </i>
+                <div style="clear: both"></div>
+            </div>
+            <div class="right_tuji" style="display: none"> <a id="butNextGroup" href="javascript://" target="_self" title="下五张图片"><img src="ui/images/callasing/ps2.jpg" width="96" height="63" /></a> <span><a id="butNextGroup" href="javascript://" target="_self" title="下五张图片">下一图集&gt;&gt;</a></span> </div>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -196,6 +249,186 @@ $(document).ready(function(){
    });
 </script>
 <script src="../ui/js/callasing/photoswipe_init.js"></script>
+<script>var productId=349691; var brandId=35929; </script>
+<span id="span_count" class="spanclass"></span>
+<script type="text/javascript">
+    $("#gallery").css("display","none");
+    var autoPalyer = new AutoPlayer({
+        "baseUrl":"http://product.pconline.com.cn/pdlib/",
+        "tag":"",
+        "screenId":"screen",
+        "altId":"alt",
+        "defaultAlt":"组图：实用图集",
+        "navId":"nav3",
+        "butPlayId":"butPlay",
+        "butPauseId":"butPause",
+        "butStopId":"butStop",
+        "playStatusId":"playStatus",
+        "butPrevId":"butPrev,topPrev",
+        "butNextId":"butNext,topNext",
+        "butPrevGroupId":"butPrevGroup",
+        "butNextGroupId":"butNextGroup",
+        "butPrevLinkId":"butPrevLink",
+        "butNextLinkId":"butNextLink",
+        "butExamineId":"butExamine",
+        "pvCounterId":"span_count",
+        "butSpeedGroupId":"speedGroup",
+        "showTotalId":"showTotal",
+        "showPageId":"showPage",
+        "showSourceId":"showSource",
+        "showSourceCompositeId":"showSourceComposite",
+        "data":picsJson["pics1"],
+        "curId":2531086,
+        "picFilter":"",
+        "curUrl":""
+    });
+    $(".playButtom").live("click",function(){
+      //  autoPalyer = null;
+         $("#gallery").hide(1000,"",function(){
+//             autoPalyer = new AutoPlayer({
+//                 "baseUrl":"http://product.pconline.com.cn/pdlib/",
+//                 "tag":"",
+//                 "screenId":"screen",
+//                 "altId":"alt",
+//                 "defaultAlt":"组图2：实用图集",
+//                 "navId":"nav3",
+//                 "butPlayId":"butPlay",
+//                 "butPauseId":"butPause",
+//                 "butStopId":"butStop",
+//                 "playStatusId":"playStatus",
+//                 "butPrevId":"butPrev,topPrev",
+//                 "butNextId":"butNext,topNext",
+//                 "butPrevGroupId":"butPrevGroup",
+//                 "butNextGroupId":"butNextGroup",
+//                 "butPrevLinkId":"butPrevLink",
+//                 "butNextLinkId":"butNextLink",
+//                 "butExamineId":"butExamine",
+//                 "pvCounterId":"span_count",
+//                 "butSpeedGroupId":"speedGroup",
+//                 "showTotalId":"showTotal",
+//                 "showPageId":"showPage",
+//                 "showSourceId":"showSource",
+//                 "showSourceCompositeId":"showSourceComposite",
+//                 "data":picsJson["pics2"],
+//                 "curId":2531086,
+//                 "picFilter":"",
+//                 "curUrl":""
+//             });
+//             $("#gallery").show(1000);
+         });
+
+
+    });
+    function showpic(index){
+        var title;
+        switch (index){
+            case 2:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/gtt_app.png'/>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>共同体 |</span>  企业云管理平台</span><br/>" +
+                        "<span class='subtitle'>基于gtt企业管理系统，推出的手机端app，让企业管理变得更加高效轻松。</span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+            case 6:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/jiuman.png'/>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>M-comics |</span>  漫画阅读软件</span><br/>" +
+                        "<span class='subtitle'>ipad版本及手机版的电子漫画阅读app。</span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+            case 9:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/ipad.png'>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>九漫动感漫画  |</span>  ipad版</span><br/>" +
+                        "<span class='subtitle'></span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+            case 3:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/gtt_web.png'/>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>共同体gtt组织管理系统 </span> </span><br/>" +
+                        "<span class='subtitle'>一套系统驱动企业绩效管理与全员职业化成长的云管理平台。</span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+            case 7:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/miui.png'>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>手机主题真好玩 </span></span> <br/>" +
+                        "<span class='subtitle'>闲着没事做着玩的手机主题。</span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+            case 4:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/guimi_web.png'/>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>龟蜜gtt粉丝社区</span></span><br/>" +
+                        "<span class='subtitle'></span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+            case 1:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/weixue_app.png'/>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>微学公众平台</span></span><br/>" +
+                        "<span class='subtitle'></span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+            case 5:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/weixue_web.png'/>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>微学 |</span>  知识分享平台</span><br/>" +
+                        "<span class='subtitle'>这是个线上线下知识分享交流的app，从拿到原型开始，我就对它产生了极大的兴趣，一手设计移动端及ipad版本。过程中不断的迭代让。</span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+            case 8:
+                title = "<img class='pic' width='60px' src='ui/images/callasing/zhanshitubiao/24dian.png'/>" +
+                        "<div class='info'>" +
+                        "<span class='title'><span class='bold'>24点小游戏 </span><br/>" +
+                        "<span class='subtitle'>空闲时间想和朋友一起玩玩休闲的小游戏，就做了小时候喜欢玩的24点游戏。</span>" +
+                        "</div>" +
+                        "<div style='clear: both'></div>";
+                break;
+
+        }
+
+         new AutoPlayer({
+            "baseUrl":"http://product.pconline.com.cn/pdlib/",
+            "tag":"",
+            "screenId":"screen",
+            "altId":"alt",
+            "defaultAlt":title,
+            "navId":"nav3",
+            "butPlayId":"butPlay",
+            "butPauseId":"butPause",
+            "butStopId":"butStop",
+            "playStatusId":"playStatus",
+            "butPrevId":"butPrev,topPrev",
+            "butNextId":"butNext,topNext",
+            "butPrevGroupId":"butPrevGroup",
+            "butNextGroupId":"butNextGroup",
+            "butPrevLinkId":"butPrevLink",
+            "butNextLinkId":"butNextLink",
+            "butExamineId":"butExamine",
+            "pvCounterId":"span_count",
+            "butSpeedGroupId":"speedGroup",
+            "showTotalId":"showTotal",
+            "showPageId":"showPage",
+            "showSourceId":"showSource",
+            "showSourceCompositeId":"showSourceComposite",
+            "data":picsJson["pics"+index],
+            "curId":2531086,
+            "picFilter":"",
+            "curUrl":""
+        });
+        $("#gallery").show(1000);
+    }
+</script>
 <!-- 代码 结束 -->
 </body>
 </html>

@@ -9,3 +9,4 @@ application/logs/*
 !application/logs/.htaccess
 
 /ui
+/mobile_web_examples
