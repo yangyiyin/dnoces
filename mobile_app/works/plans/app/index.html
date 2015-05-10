@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>plans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="../js/require.js" type="text/javascript"></script>
+    <script src="../js/mui.min.js" type="text/javascript"></script>
+    <link href="../css/mui.min.css?v=2.0" type="text/css" rel="stylesheet"/>
+    <!--<script src="http://localhost:8082/target/target-script-min.js#anonymous"></script>-->
+</head>
+
+<body ms-controller="index">
+<div class="mui-off-canvas-wrap mui-draggable" id="offCanvasWrapper">
+    <div class="mui-inner-wrap">
+        <header class="mui-bar mui-bar-nav">
+            <a class="mui-icon mui-icon-bars mui-pull-left" ms-on-tap="showSideMenu"></a>
+            <a id="info" class="mui-icon mui-icon-info-filled mui-pull-right" style="color: #999;"></a>
+            <h1 class="mui-title">计划</h1>
+        </header>
+        <div class="mui-content-bottom mui-content">
+            <button class="mui-btn mui-btn-positive mui-btn-block" ms-on-tap="newPlan">新建计划</button>
+            <button class="mui-btn mui-btn-primary mui-btn-block" ms-on-tap="showSideMenu">查看计划</button>
+        </div>
+        <!-- off-canvas backdrop -->
+        <div class="mui-off-canvas-backdrop"></div>
+        <div id="is_show_menu" style="display: none">{{is_show_menu}}</div>
+    </div>
+    <aside id="offCanvasSide" class="mui-off-canvas-left">
+        <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="title" style="margin-bottom: 25px;">计划列表</div>
+                <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+                    <li class="mui-table-view-cell" style="padding-right: 11px" ms-repeat-pl="plan_arr" ms-on-tap="showDetail($index)">
+                        <div class="mui-slider-left mui-disabled" ms-on-tap="delPlan($index,$event)">
+                            <a class="mui-btn mui-btn-red">删除</a>
+                        </div>
+                        <div class="mui-slider-handle">
+                            <a class="mui-navigate-right">
+                                {{pl.subject}}  {{pl.progress}}%
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </aside>
+</div>
+</body>
+<script>
+    require(['../js/require_config.js?t='+new Date()],function(){
+        require(['index', 'avalon', "domReady!"], function(index,avalon) {//第三块，加载其他模块
+            index.index();
+            avalon.scan();
+        });
+    })
+
+</script>
+<style>
+    .mui-table-view-cell > .mui-slider-handle{
+        background: none;
+    }
+
+</style>
+</html>
