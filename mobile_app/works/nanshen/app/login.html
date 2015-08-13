@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>男神的特权</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="../js/require.js" type="text/javascript"></script>
+    <script src="../js/mui.min.js" type="text/javascript"></script>
+    <link href="../css/mui.min.css" type="text/css" rel="stylesheet"/>
+    <script src="http://localhost:8082/target/target-script-min.js#anonymous"></script>
+</head>
+
+<body>
+
+</body>
+<script>
+    mui.init();
+    require(['../js/require_config.js?t='+new Date()],function(){
+        require(['login', 'avalon', "domReady!"], function(login,avalon) {//第三块，加载其他模块
+            login.index();
+            avalon.scan();
+        });
+    });
+</script>
+</html>

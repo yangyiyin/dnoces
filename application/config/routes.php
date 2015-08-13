@@ -42,7 +42,7 @@ $host = explode(".",$_SERVER['HTTP_HOST']);
 if($host[0]=='callasing'){
     $route['default_controller'] = "callasing/indexpage";
 }else{
-    $route['default_controller'] = "admin/login";
+  //  $route['default_controller'] = $host[0].$host[1];
 }
 
 $route['404_override'] = '';

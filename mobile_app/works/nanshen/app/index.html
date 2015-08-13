@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>男神的特权</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="../js/plugins/snap.js"></script>
+    <script src="../js/plugins/modernizr.js"></script>
+    <script src="../js/plugins/classie.js"></script>
+    <script src="../js/plugins/dialogFx.js"></script>
+    <script src="../js/require.js" type="text/javascript"></script>
+    <script src="../js/mui.min.js" type="text/javascript"></script>
+    <link href="../css/mui.min.css" type="text/css" rel="stylesheet"/>
+    <script src="../js/app.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../css/demo.css">
+    <!-- common styles -->
+    <link rel="stylesheet" type="text/css" href="../css/dialog.css">
+    <!-- individual effect -->
+    <link rel="stylesheet" type="text/css" href="../css/dialog-sally.css">
+    <script src="http://localhost:8082/target/target-script-min.js#anonymous"></script>
+</head>
+
+<body>
+<div class="mui-content mui-content-top .mui-content-white mui-off-canvas-wrap mui-draggable" ms-controller="index" id="offCanvasWrapper" >
+<div class="mui-inner-wrap">
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+<div class="mui-scroll">
+    <div class="top_gallery">
+        <div class="content">
+            <div class="menu" ms-on-tap="showSideMenu"><span class="mui-icon mui-icon-bars" ms-class-corner_point="is_corner_point"></span></div>
+            <div class="settings"><a href="setting.html" class="webview" webview="refresh"><span class="mui-icon mui-icon-gear"></span></a></div>
+            <div class="mui-pull-left">
+                <div class="manlogo"></div>
+                <p>设置头像</p>
+            </div>
+            <div class="mui-pull-right mui-clearfix">
+                <div class="girllogo"></div>
+                <p>我的她</p>
+            </div>
+            <div class="middle">
+                <div class="lovelogo"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="own">
+        <div class="jifen mui-pull-left">
+            <p class="line1">2500</p>
+            <p class="line2"><span class="jifen_icon"></span>现有积分<span class="arrow"></span></p>
+        </div>
+        <div class="tequan mui-pull-left" ms-on-tap="tequanlist">
+            <p class="line1">4</p>
+            <p class="line2" ><span class="tequan_icon"></span>已兑换特权<span class="arrow"></span></p>
+        </div>
+        <div class="mui-clearfix"></div>
+    </div>
+    <div class="body">
+        <div class="item">
+            <div class="title">猛赚积分</div>
+            <ul class="mui-table-view mui-grid-view mui-grid-9">
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger" ms-on-tap="tips('打扫卫生',1,5)">
+                        <span class="mui-badge">5</span>
+                        <span class="mui-icon mui-icon-jifentequan_icon mui-icon-1"></span>
+                        <div class="mui-media-body">打扫卫生</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger" ms-on-tap="tips('洗衣服',2,5)">
+                        <span class="mui-badge">5</span>
+                        <span class="mui-icon mui-icon-jifentequan_icon mui-icon-2"></span>
+                        <div class="mui-media-body">洗衣服</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger" ms-on-tap="tips('叠衣服',3,15)">
+                        <span class="mui-badge">15</span>
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-3"></span>
+                        <div class="mui-media-body">叠衣服</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-4"></span>
+                        <div class="mui-media-body">洗碗</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-5"></span>
+                        <div class="mui-media-body">做简餐</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-6"></span>
+                        <div class="mui-media-body">唱一首歌</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-7"></span>
+                        <div class="mui-media-body">遛狗狗</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon mui-icon-jifentequan_icon mui-icon-8"></span>
+                        <div class="mui-media-body">做大餐</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon mui-icon-jifentequan_icon mui-icon-9"></span>
+                        <div class="mui-media-body">锻炼身体</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon mui-icon-jifentequan_icon mui-icon-10"></span>
+                        <div class="mui-media-body">充话费</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-11"></span>
+                        <div class="mui-media-body">送惊喜</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon mui-icon-jifentequan_icon mui-icon-12"></span>
+                        <div class="mui-media-body">自定义</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="title">特权兑换</div>
+            <ul class="mui-table-view mui-grid-view mui-grid-9">
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-badge">5</span>
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-13"></span>
+                        <div class="mui-media-body">你去洗碗</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-badge">5</span>
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-14"></span>
+                        <div class="mui-media-body">坐等吃饭</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-badge">15</span>
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-15"></span>
+                        <div class="mui-media-body">全身按摩</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-16"></span>
+                        <div class="mui-media-body">游戏1小时</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-17"></span>
+                        <div class="mui-media-body">游戏2小时</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-18"></span>
+                        <div class="mui-media-body">给我去买烟</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-19"></span>
+                        <div class="mui-media-body">生气求原谅</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-20"></span>
+                        <div class="mui-media-body">甜蜜一夜</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-21"></span>
+                        <div class="mui-media-body">这事听我的</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-22"></span>
+                        <div class="mui-media-body">今天听我的</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-23"></span>
+                        <div class="mui-media-body">兑现金</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4">
+                    <a href="javascript:;" data-dialog="somedialog" class="trigger">
+                        <span class="mui-icon  mui-icon-jifentequan_icon mui-icon-24"></span>
+                        <div class="mui-media-body">自定义</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="somedialog" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content">
+            <p>男神么么哒~</p>
+            <p>确定通过<span>"{{item_name}}"</span>赚取积分吗?</p>
+            <div>
+                <button class="action" data-dialog-close="" ms-on-tap="pushMessage(item_id)">确定</button>
+                <button class="action" data-dialog-close="">取消</button>
+            </div>
+        </div>
+    </div>
+    <div class="mui-off-canvas-backdrop"></div>
+</div>
+</div>
+</div>
+<aside id="offCanvasSide" class="mui-off-canvas-left">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-btn mui-btn-link mui-pull-left"><span class="mui-icon mui-icon-arrowthinleft" style="font-size: 30px;"></span></a>
+        <h1 class="mui-title">任务列表</h1>
+    </header>
+    <div id="offCanvasSideScroll" class="mui-scroll-wrapper mui-content">
+        <div class="mui-scroll">
+            <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+                <li ms-repeat-task_item="task" class="mui-table-view-cell" style="padding-right: 11px">
+                    <div class="mui-slider-right mui-disabled" ms-on-tap="finishTask(task_item.count)">
+                        <a class="mui-btn mui-btn-red">完成任务</a>
+                    </div>
+                    <div class="mui-slider-handle">
+                        <a>
+                            <p>嗨男神~</p>
+                            <p>您<span class="item_name">"{{task_item.item_name}}"</span>已提交，开始做吧~</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+</div>
+
+
+</body>
+<style>
+    .top_gallery{
+        width: 100%;height:200px;background: url('../images/top_bg.png');background-size: 100% 100%;background-position: center;
+    }
+    .manlogo{
+        width: 80px;height:80px;background: url('../images/boy_girl.png');background-size: 160px;background-position: 0 0;background-repeat: no-repeat;
+    }
+    .menu{
+        position: absolute;top: 10px;left: 10px;color: #fff;
+    }
+    .settings{
+        position: absolute;top: 10px;right: 10px;color: #fff;
+    }
+    .top_gallery p{
+        text-align: center;
+    }
+    .top_gallery .content{
+        width: 70%;margin: 0 auto;padding: 50px 0;
+    }
+    .lovelogo{
+        width: 50px;height:50px;background: url('../images/love.png');background-size: 50px;background-position: 0 0;background-repeat: no-repeat;margin: 0 auto;
+    }
+    .middle{
+        width: 50px;margin: 0 auto;margin-top: 25px;padding-left: 10px;
+    }
+    .girllogo{
+        width: 60px;height:60px;background: url('../images/boy_girl2.png');background-size: 120px;background-position: 100% 0;background-repeat: no-repeat;margin-top: 10px;
+    }
+    .arrow{
+        background: url("../images/arrow.png");background-repeat: no-repeat;background-size: 100%;background-position: 0 50%;padding: 5px;
+    }
+    .own{
+        position: relative;padding: 10px;background: #fff;vertical-align: middle;border-bottom: 1px solid #eee;
+    }
+    .own p{
+        text-align: center;
+    }
+    .jifen .jifen_icon{
+        background: url("../images/jifen.png");background-repeat: no-repeat;background-size: 20px;background-position: 0 40%;padding: 10px;
+    }
+    .tequan .tequan_icon{
+        background: url("../images/tequan.png");background-repeat: no-repeat;background-size: 20px;background-position: 0 40%;padding: 10px;
+    }
+    .jifen, .tequan{
+        width: 50%;padding-top: 10px;
+    }
+    .jifen:after{
+        background-color: #eee;
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+    }
+    .line2 span{
+        margin-left: 10px;margin-right: 10px;
+    }
+    .line1{
+        font-size: 30px;font-weight: 200;
+    }
+    .body{
+        margin-top: 15px;
+    }
+    .mui-grid-view.mui-grid-9{
+        background: #fff;
+    }
+    .mui-badge{
+        background: red;color: #fff;left: 2px;
+    }
+
+    .mui-table-view-cell > a > .mui-badge{
+        top:12px;right: auto;
+    }
+    .mui-grid-view.mui-grid-9 .mui-table-view-cell{
+        height: 100px;
+    }
+    .mui-table-view::after{
+        background: #eee;
+    }
+    .body .title{
+        vertical-align: middle;height: 40px;background: #577BB5;line-height: 40px;padding-left: 10px;color: #fff;
+    }
+    .item:first-child{
+        margin-bottom: 15px;
+    }
+    .item:nth-child(2) .title{
+        background: #B66957;
+    }
+    .mui-icon-jifentequan_icon{
+       padding: 20px;background: url("../images/jifentequan_icon.png");background-size: 360px;
+    }
+    .mui-icon-1{
+        background-position: -30px -25px ;
+    }
+    .mui-icon-2{
+        background-position: -160px -25px ;
+    }
+    .mui-icon-3{
+        background-position: -293px -25px ;
+    }
+    .mui-icon-4{
+        background-position: -30px -83px ;
+    }
+    .mui-icon-5{
+        background-position: -160px -83px ;
+    }
+    .mui-icon-6{
+        background-position: -293px -83px ;
+    }
+    .mui-icon-7{
+        background-position: -30px -141px ;
+    }
+    .mui-icon-8{
+        background-position: -160px -141px ;
+    }
+    .mui-icon-9{
+        background-position: -293px -141px ;
+    }
+    .mui-icon-10{
+        background-position: -30px -199px ;
+    }
+    .mui-icon-11{
+        background-position: -160px -199px ;
+    }
+    .mui-icon-12{
+        background-position: -293px -199px ;
+    }
+    .mui-icon-13{
+           background-position: -30px -257px ;
+       }
+    .mui-icon-14{
+        background-position: -160px -257px ;
+    }
+    .mui-icon-15{
+        background-position: -293px -257px ;
+    }
+    .mui-icon-16{
+        background-position: -30px -315px ;
+    }
+    .mui-icon-17{
+        background-position: -160px -315px ;
+    }
+    .mui-icon-18{
+        background-position: -293px -315px ;
+    }
+    .mui-icon-19{
+        background-position: -30px -373px ;
+    }
+    .mui-icon-20{
+        background-position: -160px -373px ;
+    }
+    .mui-icon-21{
+        background-position: -293px -373px ;
+    }
+    .mui-icon-22{
+        background-position: -30px -433px ;
+    }
+    .mui-icon-23{
+        background-position: -160px -433px ;
+    }
+    .mui-icon-24{
+        background-position: -293px -433px ;
+    }
+    .mui-off-canvas-left, .mui-off-canvas-right{
+        width: 90%;
+    }
+    .mui-bar-nav{
+        box-shadow: none;background: #ECEBE9;
+    }
+    .mui-table-view-cell{
+        background: #fff;
+    }
+    .item_name{
+        color: #FF542C;
+    }
+    .mui-bar .mui-btn-link{
+        color: #999;
+    }
+    .mui-table-view-inverted .mui-table-view-cell::after{
+        background: none;
+    }
+    .mui-table-view-inverted .mui-table-view-cell{
+        border-bottom: 1px solid #eee;
+    }
+    .corner_point{
+        position: relative;
+    }
+    .corner_point:after{
+        width: 8px;
+        height:8px;
+        border-radius: 5px;
+        background: red;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        content: "";
+    }
+
+
+</style>
+<script>
+    mui.init();
+
+    require(['../js/require_config.js?t='+new Date()],function(){
+        require(['index', 'avalon', "domReady!"], function(index,avalon) {//第三块，加载其他模块
+            index.index();
+            avalon.scan();
+        });
+    });
+
+</script>
+<script>
+    (function() {
+        var dlgtrigger = document.querySelectorAll( '[data-dialog]' ),
+                somedialog = document.getElementById( dlgtrigger[0].getAttribute( 'data-dialog' ) ),
+                dlg = new DialogFx( somedialog );
+        for(var i=0;i<dlgtrigger.length;i++){
+            dlgtrigger[i].addEventListener( 'click', dlg.toggle.bind(dlg) );
+
+        }
+    })();
+</script>
+<script>
+    var pushServer = "http://demo.dcloud.net.cn/helloh5/push/";
+    /**
+     * 请求‘透传数据’推送消息
+     */
+    function requireTranMsg(){
+        //plus.runtime.openURL( url );
+        mui.post(pushServer+'igetui.php',{
+            pushtype:"noti",
+            appid:plus.runtime.appid,
+            cid:plus.push.getClientInfo().clientid,
+            title:'Hello H5+',
+            content:'123',
+            payload:'{title:"Hello H5+ Test",content:"test content",payload:{id:"1234567890"}}',
+            version:plus.runtime.version
+
+        },function(data){
+
+            console.log(1111);
+        },'json');
+    }
+    // 监听在线消息事件
+    document.addEventListener( "plusready", function(){
+        plus.push.addEventListener( "receive", function( msg ) {
+            if ( msg.aps ) {  // Apple APNS message
+                console.log( "接收到在线APNS消息：" );
+            } else {
+                console.log( "接收到在线透传消息：" );
+            }
+            logoutPushMsg( msg );
+        }, false );
+    });
+
+    /**
+     * 日志输入推送消息内容
+     */
+    function logoutPushMsg( msg ) {
+        console.log( "title: "+msg.title );
+        console.log( "content: "+msg.content );
+        if ( msg.payload ) {
+            if ( typeof(msg.payload)=="string" ) {
+                console.log( "payload(String): "+msg.payload );
+            } else {
+                console.log( "payload(JSON): "+JSON.stringify(msg.payload) );
+            }
+        } else {
+            console.log( "payload: undefined" );
+        }
+        if ( msg.aps ) {
+            console.log( "aps: "+JSON.stringify(msg.aps) );
+        }
+    }
+</script>
+
+</html>
